@@ -1,0 +1,477 @@
+/* Universal Styles */
+
+html {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	max-width: 1200px;
+}
+
+h1, h3 {
+	color: #404040;
+}
+
+p {
+	color: gray;
+}
+
+/* Header */
+
+header .desktop {
+	display: flex;
+	height: 4rem;
+	width: 100%;
+}
+
+header img {
+	height: 2rem;
+	padding: 16px 24px;
+}
+
+header nav {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 8px;
+}
+
+nav a {
+	padding-right: 16px;
+	color: #404040;
+	text-decoration: none;
+}
+
+#colmar-academy {
+	display: flex;
+	align-items: center;
+}
+
+#colmar {
+	font-weight: 700;
+}
+
+#academy {
+	font-weight: 300;
+	color: lightgray;
+}
+
+header .mobile {
+	display: none; 
+}
+
+@media only screen and (max-width: 480px) {
+	header .desktop {
+		display: none;
+	}
+	
+	header .mobile {
+		display: block;
+		background-color: white;
+		height: 64px;
+		width: 100%;
+	}
+	
+	header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+		padding-left: 0;
+  }
+	
+	header .mobile li {
+		list-style: none;
+	}
+}
+
+/* Learn something new everyday */
+
+.learn {
+	display: inline-flex;
+	width: 100%;
+	background-color: lightgray;
+	align-items: center;
+}
+
+.learn img {
+	width: 60%;
+	padding: 32px 24px;
+}
+
+.learn-text-content {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.learn-text-content h1 {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.start-here {
+	height: auto;
+	background-color: dimgray;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 8px 0;
+}
+
+@media only screen and (max-width: 480px) {
+	.learn {
+		display: block;
+		background-color: lightgray;
+	}
+	
+	.learn img {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.learn-text-content h1 {
+		margin: 32px 16px;
+	}
+	
+	.learn-text-content h3 {
+		margin: 0px 16px;
+	}
+	
+	.learn-text-content .start-here {
+		margin: 24px 0px 32px 16px;
+		width: 100%;
+		background-color: gray;
+	}
+}
+
+/* It doesn't hurt to keep practicing */
+
+.practicing {
+	display: inline-flex;
+	width: 100%;
+}
+
+.practicing img {
+	width: 100%;
+}
+
+.practicing-left {
+	width: 60%;
+	padding: 32px 24px;
+	border-right: 1px solid lightgray;
+}
+
+.practicing-left h1 {
+	margin: 32px 0px 24px 0px;
+}
+
+.practicing-left p {
+	color: gray;
+	padding: 0px;
+}
+
+#emanuel {
+	color: #404040;
+	padding-top: 1rem;
+}
+
+.practicing-right {
+	width: 40%;
+	display: inline-flex;
+	align-items: stretch;
+	flex-direction: column;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+.practicing-right-section {
+	width: 100%;
+	height: 200px;
+	display: inline-flex;
+	border-bottom: 1px solid lightgray;
+}
+
+.practicing-right-section img {
+	width: 35%;
+	height: auto;
+	padding: 1rem;
+}
+
+.prs-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+}
+
+.prs-text a {
+	text-decoration: none;
+}
+
+.prs-text h3 {
+	margin: 0;
+}
+
+.prs-text p {
+	padding-left: 0;
+	margin: 8px 0px;
+}
+
+#our-guest-lecture {
+	background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+	.practicing-left {
+		display: none;
+	}
+	
+	.practicing-right {
+		width: 100%;
+		padding: 1rem 1rem 0 1rem;
+	}
+	
+	.practicing-right-section {
+		width: 100%;
+		height: 300px;
+		display: block;
+	}
+	
+	.practicing-right-section img {
+		width: 100%;
+		height: 150px;
+		padding: 0;
+	}
+	
+	.prs-text {
+		align-items: left;
+		width: 100%;
+		padding-left: 1rem;
+	}
+	
+	.prs-text h3 {
+		padding-top: 2rem;
+	}
+	
+	#our-guest-lecture {
+		background-color: white;
+		padding-bottom: 1rem;
+	}
+}
+
+/* Start learning */
+
+.start-learning .desktop {
+	background-color: lightgray;
+	padding: 16px 72px 32px 72px;
+}
+
+.start-learning h1 {
+	text-align: center;
+	background-color: lightgray;
+	margin: 0;
+	padding-top: 32px;
+	font-size: 2rem;
+}
+
+.boxes {
+	justify-content: center;
+	flex-wrap: wrap;
+	display: inline-flex;
+}
+
+.desktop .box {
+	width: 300px;
+	background-color: white;
+	margin: 1rem;
+}
+
+.box img {
+	width: 300px;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+}
+
+.box h3, p {
+	padding: 0 1rem;
+}
+
+.start-learning .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.start-learning .desktop {
+		display: none;
+	}
+	
+	.start-learning .mobile {
+		display: block;
+		border-bottom: 1px solid lightgray;
+		padding-bottom: 32px;
+	}
+	
+	.start-learning h1 {
+		background-color: white;
+		padding: 2rem 0 1rem 0;
+	}
+	
+	.mobile .box {
+		width: 100%;
+		background-color: lightgray;
+	}
+	
+	.mobile .box h3 {
+		padding: 16px 0px 24px 16px;
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
+}
+
+/* Thesis exhibits */
+
+#thesis-exhibits {
+	width: 100%;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.thesis {
+	display: inline-flex;
+	width: 100%;
+}
+
+.thesis img {
+	width: 100%;
+}
+
+.thesis h1 {
+	width: 100%;
+}
+
+.thesis-left {
+	width: 60%;
+	padding-right: 24px;
+}
+
+.thesis-left video {
+	width: 100%;
+	padding: 0px 24px;
+}
+
+.thesis-left h3 {
+	padding-left: 24px;
+}
+
+.thesis-left p {
+	padding-left: 24px;
+}
+
+.thesis-right {
+	width: 40%;
+	display: inline-flex;
+	align-items: stretch;
+	flex-direction: column;
+	padding-left: 24px;
+}
+
+.thesis-right-section {
+	width: 100%;
+	height: 200px;
+	display: inline-flex;
+}
+
+.thesis-right-section img {
+	width: 35%;
+	height: auto;
+	padding: 1rem;
+}
+
+.trs-text {
+	display: flex;
+	align-items: center;
+}
+
+.trs-text-content {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.trs-text-content p {
+	padding-left: 0;
+}
+
+#fisma {
+	background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+	#thesis-exhibits {
+		margin: 2rem 0 1rem 0;
+	}
+	
+	.thesis-right {
+		display: none;
+	}
+	
+	.thesis-left {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.thesis-left h3, .thesis-left p {
+		display: none;
+	}
+	
+	.thesis-left video {
+		width: 100%;
+		padding: 0 0 24px 0;
+	}
+}
+
+/* Footer */
+
+footer {
+	border-top: 1px solid gray;
+	display: inline-flex;
+	width: 100%;
+}
+
+footer a {
+	text-decoration: none;
+	color: gray;
+}
+
+.left {
+	text-align: left;
+	width: 50%;
+}
+
+.left p {
+	padding-left: 24px;
+}
+
+.right {
+	text-align: right;
+	width: 50%;
+	padding-top: 16px;
+}
+
+.right a {
+	padding-right: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+	.left {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.right {
+		display: none;
+	}
+}
